@@ -1,3 +1,6 @@
+# Ruby Hello World
+
+This sample demonstrates creating a simple Hello World app built with Ruby on Rails that is deployed as an Azure Web App.
 
 # Contributing
 
