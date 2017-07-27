@@ -2,15 +2,35 @@
 
 This sample demonstrates creating a simple Hello World app built with Ruby on Rails that is deployed as an Azure Web App.
 
-# Prepare app 
-cd ~/workspace/hello-world
+# Prepare app
+
+To make a new rails app, create a folder to contain the source code, then navigate into it.
+
+```bash
+mkdir workspace
+cd workspace
+```
 
 # Creates new rails app
+
+Next, run the `rails new` command to create your application.
+
+```bash
 rails new hello-world --skip-yarn
+```
 
 # Run rails server locally
+
+Finally, navigate to the hello-world folder, and run `rails server` to launch the rails app in a browser.
+
+```bash
 cd hello-world
 rails server
+```
+
+Navigate to http://localhost:3000, to see the running application.
+
+![Rails Hello World App](https://docs.microsoft.com/en-us/azure/app-service-web/media/app-service-linux-ruby-get-started/hello-world.png)
 
 # Contributing
 
