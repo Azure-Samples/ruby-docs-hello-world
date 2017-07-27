@@ -2,6 +2,16 @@
 
 This sample demonstrates creating a simple Hello World app built with Ruby on Rails that is deployed as an Azure Web App.
 
+# Prepare app 
+cd ~/workspace/hello-world
+
+# Creates new rails app
+rails new hello-world --skip-yarn
+
+# Run rails server locally
+cd hello-world
+rails server
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
