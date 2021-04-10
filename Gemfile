@@ -28,8 +28,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Bump Nokogiri (DOM parsing) to make Rails 5 work with newer gem updates, fix Listen in all environments
-gem "nokogiri", "~> 1.11.2"
+gem "nokogiri", '~> 1.11.2'
 gem "listen", '>= 3.0.5', '< 3.2'
+gem "rake", '~> 13.0.3'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
