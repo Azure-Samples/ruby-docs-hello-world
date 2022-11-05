@@ -1,15 +1,24 @@
 ---
-topic: Ruby on Rails Hello World
-languages:
+topic: Ruby on Rails + Azure
+tech stacks:
   - ruby
+  - rails
+  - azure
 products:
   - Azure App Service
   - Azure Web Apps
 ---
 
-# Ruby on Rails Hello World
+# OTTSolver
 
+Based off on ruby on rails hello world sample.
 This sample demonstrates the default Ruby on Rails app for [App Service on Linux](https://docs.microsoft.com/azure/app-service/containers).
+
+# TODO
+1. Make TDD or BDD environment
+2. Construct model and migrate DB
+3. Apply admin site to project
+4. Code worker(web crawler, parser)
 
 # Contributing
 

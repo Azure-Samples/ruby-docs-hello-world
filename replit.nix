@@ -9,6 +9,7 @@ in {
     pkgs.sqlite
     pkgs.ruby
     pkgs.libffi
+    pkgs.rubyPackages.rspec
     pkgs.rubyPackages.ffi
     pkgs.rubyPackages.ffi-compiler
     pkgs.glibc

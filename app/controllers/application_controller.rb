@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  def hello
-    render html: "Hello World!"
+  def index
+    @articles = Article.all
   end
 end
