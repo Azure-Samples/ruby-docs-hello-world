@@ -1,2 +1,0 @@
-class OttService < ApplicationRecord
-end
