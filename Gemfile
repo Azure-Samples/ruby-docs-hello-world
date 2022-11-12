@@ -43,7 +43,10 @@ gem "tzinfo-data", "~> 1.2022", ">= 1.2022.6"
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
+
+# Use Rake to perfoem db:migrate and asset:precompile... etc.
+gem "rake", "~> 12.2"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
