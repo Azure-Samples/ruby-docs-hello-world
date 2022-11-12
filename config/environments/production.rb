@@ -23,13 +23,13 @@ Rails.application.configure do
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present?
-  config.serve_static_files = true
+  config.serve_static_files = ENV["RAILS_SERVE_STATIC_FILES"].present?
   
   # Compress CSS using a preprocessor.
   config.assets.css_compressor = :sassc
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = true
+  config.assets.compile = ENV["RAILS_ASSETS_COMPILE"].present?
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = "http://assets.example.com"
@@ -51,8 +51,7 @@ Rails.application.configure do
 
   # Include generic and useful information about system operation, but avoid logging too much
   # information to avoid inadvertent exposure of personally identifiable information (PII).
-  # Temporaly enabled debug mode, so we cant get more info.
-  config.log_level = :debug
+  config.log_level = :info
 
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
@@ -90,6 +89,7 @@ Rails.application.configure do
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
+    config.log_level = :debug
   end
 
   # Do not dump schema after migrations.
