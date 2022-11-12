@@ -5,14 +5,15 @@ let
   }) {};
 in {
   deps = [
-    pkgs.nodejs-16_x
-    pkgs.sqlite
-    pkgs.ruby
+    pkgs.glibc
     pkgs.libffi
+    pkgs.nodejs-16_x
+    pkgs.ruby
     pkgs.rubyPackages.rspec
     pkgs.rubyPackages.ffi
     pkgs.rubyPackages.ffi-compiler
-    pkgs.glibc
+    pkgs.sqlite
+    pkgs.yarn
   ];
 }
 
